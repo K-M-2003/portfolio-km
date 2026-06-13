@@ -27,17 +27,36 @@
     </p>
 </section>
 
-<section>
+<section class="projects">
+
     <h2>Projects</h2>
 
-    <h3>Secure Software Enhancement Project</h3>
-    <p>Implemented SHA-256 hashing and security improvements.</p>
+    <div class="project-layout">
 
-    <h3>Course Advising System</h3>
-    <p>C++ application utilizing data structures and algorithms.</p>
+        <!-- LEFT: folders -->
+        <div class="project-list">
 
-    <h3>SkyHayo!</h3>
-    <p>Weather application currently in development.</p>
+            <div class="folder" onclick="showProject('secure')">
+                📁 Secure Software Project
+            </div>
+
+            <div class="folder" onclick="showProject('course')">
+                📁 Course Advising System
+            </div>
+
+            <div class="folder" onclick="showProject('skyhayo')">
+                📁 SkyHayo!
+            </div>
+
+        </div>
+
+        <!-- RIGHT: details -->
+        <div class="project-details" id="projectDetails">
+            <h3>Select a project</h3>
+            <p>Click a folder to view details.</p>
+        </div>
+
+    </div>
 </section>
 
 <section>

@@ -89,6 +89,46 @@ section {
     box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
+.project-layout {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* LEFT SIDE */
+.project-list {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* PURPLE FOLDERS */
+.folder {
+    background: #2d1b4e;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(196,181,253,0.3);
+    transition: 0.2s ease;
+    text-align: left;
+}
+
+.folder:hover {
+    background: #3b2f63;
+    transform: translateX(5px);
+}
+
+/* RIGHT SIDE */
+.project-details {
+    width: 60%;
+    background: rgba(37, 39, 64, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(196,181,253,0.2);
+    text-align: left;
+}
+
 /* ===== HEADINGS ===== */
 h2, h3 {
     font-family: 'Poppins', sans-serif;

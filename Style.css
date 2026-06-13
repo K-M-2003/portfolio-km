@@ -1,9 +1,10 @@
 body {
     font-family: 'Inter', sans-serif;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
+    line-height: 1.6;
 }
 
 section {
@@ -13,6 +14,7 @@ section {
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     color: #333;
+    margin-bottom: 10px;
 }
 
 a {
@@ -21,5 +23,16 @@ a {
 }
 
 a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
+footer {
+    margin-top: 50px;
+}
     text-decoration: underline;
 }

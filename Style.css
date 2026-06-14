@@ -28,20 +28,50 @@ body {
 }
 
 /* ===== TECH GRID OVERLAY ===== */
+/* Grid */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    z-index: -1;
+    z-index: -2;
 
     background-image:
         linear-gradient(rgba(167,139,250,0.08) 1px, transparent 1px),
         linear-gradient(90deg, rgba(167,139,250,0.08) 1px, transparent 1px);
 
     background-size: 40px 40px;
-    animation: gridMove 25s linear infinite;
 }
 
+/* Sliding glow */
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(196,181,253,0.15),
+        rgba(196,181,253,0.35),
+        rgba(196,181,253,0.15),
+        transparent
+    );
+
+    width: 30%;
+    transform: translateX(-150%);
+    animation: slideGlow 8s linear infinite;
+}
+
+@keyframes slideGlow {
+    from {
+        transform: translateX(-150%);
+    }
+    to {
+        transform: translateX(450%);
+    }
+}
 @keyframes gridMove {
     from { transform: translateY(0); }
     to { transform: translateY(40px); }

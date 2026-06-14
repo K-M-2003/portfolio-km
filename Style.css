@@ -105,17 +105,13 @@ section {
 
 /* PURPLE FOLDERS */
 .folder {
-    background: #c4b5fd;
-    color: #1a1b2e;
-
+    background: #2d1b4e;
     padding: 15px;
-    border-radius: 12px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    border-radius: 10px;
     cursor: pointer;
+    border: 1px solid rgba(196,181,253,0.3);
+    transition: 0.2s ease;
+    text-align: left;
 }
 
 .folder:hover {

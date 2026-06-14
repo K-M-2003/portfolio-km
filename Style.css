@@ -118,15 +118,6 @@ section {
     cursor: pointer;
 }
 
-.folder-icon {
-    font-size: 1.3rem;
-}
-
-.folder-heart {
-    color: #4c1d95;
-    font-size: 1.2rem;
-}
-
 .folder:hover {
     background: #3b2f63;
     transform: translateX(5px);

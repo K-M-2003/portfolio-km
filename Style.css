@@ -72,10 +72,6 @@ body::after {
         transform: translateX(450%);
     }
 }
-@keyframes gridMove {
-    from { transform: translateY(0); }
-    to { transform: translateY(40px); }
-}
 
 /* ===== HEADER ===== */
 header {

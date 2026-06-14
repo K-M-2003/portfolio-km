@@ -105,13 +105,26 @@ section {
 
 /* PURPLE FOLDERS */
 .folder {
-    background: #2d1b4e;
+    background: #c4b5fd;
+    color: #1a1b2e;
+
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     cursor: pointer;
-    border: 1px solid rgba(196,181,253,0.3);
-    transition: 0.2s ease;
-    text-align: left;
+}
+
+.folder-icon {
+    font-size: 1.3rem;
+}
+
+.folder-heart {
+    color: #4c1d95;
+    font-size: 1.2rem;
 }
 
 .folder:hover {

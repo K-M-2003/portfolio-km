@@ -140,6 +140,54 @@ section {
     text-align: left;
 }
 
+/* ===== SKILLS SECTION ===== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    background: rgba(45, 27, 78, 0.9);
+    border: 1px solid rgba(196,181,253,0.25);
+    border-radius: 15px;
+    padding: 20px;
+
+    transition: all 0.3s ease;
+
+    text-align: left;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(167,139,250,0.35);
+}
+
+.skill-card h3 {
+    color: #c4b5fd;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-card li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.skill-card li:last-child {
+    border-bottom: none;
+}
+
 /* ===== HEADINGS ===== */
 h2, h3 {
     font-family: 'Poppins', sans-serif;

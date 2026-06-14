@@ -30,49 +30,69 @@ body {
 /* ===== TECH GRID OVERLAY ===== */
 /* Grid */
 body::before {
-    content: "";
+     content: "";
     position: fixed;
     inset: 0;
     z-index: -2;
+    pointer-events: none;
 
     background-image:
         linear-gradient(rgba(167,139,250,0.08) 1px, transparent 1px),
         linear-gradient(90deg, rgba(167,139,250,0.08) 1px, transparent 1px);
 
     background-size: 40px 40px;
+
+    animation: gridPulse 6s ease-in-out infinite;
 }
+
 
 /* Sliding glow */
 body::after {
     content: "";
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: -40%;
+    width: 40%;
+    height: 100%;
+
     z-index: -1;
     pointer-events: none;
 
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(196,181,253,0.15),
-        rgba(196,181,253,0.35),
-        rgba(196,181,253,0.15),
+        rgba(196,181,253,0.08),
+        rgba(196,181,253,0.25),
+        rgba(196,181,253,0.08),
         transparent
     );
 
-    width: 30%;
-    transform: translateX(-150%);
-    animation: slideGlow 8s linear infinite;
+    filter: blur(20px);
+
+    animation: slideGlow 10s linear infinite;
 }
 
+/* Grid breathing effect */
+@keyframes gridPulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Glow sweep */
 @keyframes slideGlow {
     from {
-        transform: translateX(-150%);
+        left: -40%;
     }
+
     to {
-        transform: translateX(450%);
+        left: 140%;
     }
 }
-
 /* ===== HEADER ===== */
 header {
     padding: 80px 20px;

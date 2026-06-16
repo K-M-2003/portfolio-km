@@ -14,35 +14,96 @@
 </head>
 
 <script>
-function showProject(project) {
-    const details = document.getElementById("projectDetails");
 
-    if (project === "secure") {
+function showProject(project) {
+
+    const details =
+        document.getElementById("projectDetails");
+
+    if(project === "security") {
+
         details.innerHTML = `
-            <h3>Secure Software Enhancement Project</h3>
-            <p>Implemented SHA-256 hashing, HTTPS security, and OWASP dependency checks.</p>
-            <a href="secure.zip" download>⬇ Download ZIP</a>
+            <h3>Secure Software Enhancement</h3>
+
+            <p>
+                Enhanced a Java application using SHA-256 hashing,
+                HTTPS configuration, certificate management,
+                and dependency vulnerability analysis.
+            </p>
+
+            <a href="projects/secure-software/SecureSoftware.zip" download>
+                📥 Download ZIP
+            </a>
         `;
     }
 
-    if (project === "course") {
+    else if(project === "mobile") {
+
+        details.innerHTML = `
+            <h3>Mobile Services Application</h3>
+
+            <p>
+                Java application featuring Contact, Task,
+                and Appointment services with comprehensive
+                JUnit testing and validation.
+            </p>
+
+            <a href="projects/mobile-services/MobileServices.zip" download>
+                📥 Download ZIP
+            </a>
+        `;
+    }
+
+    else if(project === "course") {
+
         details.innerHTML = `
             <h3>Course Advising System</h3>
-            <p>C++ system using data structures to manage course planning.</p>
-            <a href="course.zip" download>⬇ Download ZIP</a>
+
+            <p>
+                C++ application utilizing a Binary Search Tree
+                to organize and search course information.
+            </p>
+
+            <a href="projects/course-advising/CourseAdvising.zip" download>
+                📥 Download ZIP
+            </a>
         `;
     }
 
-    if (project === "skyhayo") {
+    else if(project === "database") {
+
+        details.innerHTML = `
+            <h3>Quantigration Database Management System</h3>
+
+            <p>
+                Designed a relational database using MySQL,
+                SQL queries, joins, updates, and business
+                data analysis.
+            </p>
+
+            <a href="projects/database-design/DatabaseDesign.zip" download>
+                📥 Download ZIP
+            </a>
+        `;
+    }
+
+    else if(project === "skyhayo") {
+
         details.innerHTML = `
             <h3>SkyHayo!</h3>
-            <p>Weather app project focused on UI/UX and API integration.</p>
-            <a href="skyhayo.zip" download>⬇ Download ZIP</a>
+
+            <p>
+                Personal weather application currently
+                in development using Unity and C#.
+            </p>
+
+            <p>🚧 In Development</p>
         `;
     }
-}
-</script>
 
+}
+
+</script>
 <body>
 
 <header>

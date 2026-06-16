@@ -74,45 +74,45 @@ function showProject(project) {
     
 </section>
 
-<section class="projects">
-
+<section id="projects">
     <h2>Projects</h2>
 
-    <div class="project-layout">
+    <div class="projects-container">
 
-        <!-- LEFT: folders -->
-        <div class="project-list">
+        <!-- Folder List -->
+        <div class="project-folders">
 
-            <div class="folder" onclick="showProject('secure')">
-                📁 Secure Software Project
+            <div class="folder" onclick="showProject('security')">
+                📁 Secure Software Enhancement
             </div>
-            
 
-            <div class="folder" onclick="showProject('secure')">
+            <div class="folder" onclick="showProject('mobile')">
+                📁 Mobile Services Application
+            </div>
+
+            <div class="folder" onclick="showProject('course')">
                 📁 Course Advising System
             </div>
-            
 
-            <div class="folder" onclick="showProject('secure')">
-                📁 Database Management System Design
+            <div class="folder" onclick="showProject('database')">
+                📁 Quantigration Database
             </div>
-            
-            
-            <div class="folder" onclick="showProject('secure')">
-                📁 Mobile Services Application (in progress)
-            </div>
-           
 
-            <div class="folder" onclick="showProject('secure')">
-                📁 SkyHayo! (in progress)
+            <div class="folder" onclick="showProject('skyhayo')">
+                📁 SkyHayo!
             </div>
 
         </div>
 
-        <!-- RIGHT: details -->
-        <div class="project-details" id="projectDetails">
-            <h3>Select a project</h3>
-            <p>Click a folder to view details.</p>
+        <!-- Project Details -->
+        <div id="projectDetails" class="project-details">
+
+            <h3>Select a Project</h3>
+
+            <p>
+                Click one of the folders to view project details.
+            </p>
+
         </div>
 
     </div>

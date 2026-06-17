@@ -86,6 +86,16 @@ h1 {
     to { background-position: 200% center; }
 }
 
+.education {
+    margin-top: 10px;
+
+    color: #c4b5fd;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
 /* ===== SECTION CARDS ===== */
 section {
     margin-top: 40px;

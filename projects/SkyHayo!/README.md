@@ -14,16 +14,22 @@ SkyHayo! is a weather application currently being developed. The goal of the pro
 - Responsive design
 
 ## Technologies
-- C#
-- Unity
-- UI Design
-- API Integration (Planned)
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- API Integration
 
 ## Skills Demonstrated
 - Software Design
 - User Interface Design
 - Project Planning
 - Application Development
+- React Development
+- Responsive Design
+- UI/UX Design
+- Front-End Development
 
 ## Future Development
 - Weather API integration

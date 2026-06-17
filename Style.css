@@ -262,6 +262,18 @@ section {
     border-bottom: none;
 }
 
+.skill-source {
+    margin-top: 15px;
+    padding-top: 10px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    font-size: 0.85rem;
+
+    color: #c4b5fd;
+}
+
 /* ===== HEADINGS ===== */
 h2, h3 {
     font-family: 'Poppins', sans-serif;

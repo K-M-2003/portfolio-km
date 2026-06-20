@@ -115,25 +115,27 @@ section {
 .projects-container {
     display: flex;
     gap: 30px;
-    margin-top: 25px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
 }
 
 .project-folders {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+
 .folder {
-    background: rgba(167,139,250,0.15);
-    border: 1px solid rgba(196,181,253,0.3);
-
-    padding: 15px;
-    margin-bottom: 15px;
-
+    background: rgba(20, 20, 40, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    padding: 18px;
     border-radius: 12px;
-
     cursor: pointer;
-
-    transition: all 0.3s ease;
+    transition: 0.3s;
+    text-align: left;
 }
 
 .folder:hover {
@@ -145,15 +147,19 @@ section {
 
 .project-details {
     width: 65%;
-
-    background: rgba(45,27,78,0.9);
-
+    min-height: 500px;
+    background: rgba(10, 10, 25, 0.85);
     border-radius: 15px;
-
     padding: 25px;
-
     text-align: left;
+
+    border: 1px solid rgba(0,255,255,0.3);
+
+    box-shadow:
+        0 0 15px rgba(0,255,255,0.25);
 }
+
+
 
 .project-details a {
     display: inline-block;

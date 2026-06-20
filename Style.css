@@ -159,8 +159,6 @@ section {
         0 0 15px rgba(0,255,255,0.25);
 }
 
-
-
 .project-details a {
     display: inline-block;
 
@@ -194,40 +192,6 @@ section {
 .project-contact a {
     color: #c4b5fd;
     font-weight: 600;
-}
-
-/* LEFT SIDE */
-.project-list {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-/* PURPLE FOLDERS */
-.folder {
-    background: #2d1b4e;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid rgba(196,181,253,0.3);
-    transition: 0.2s ease;
-    text-align: left;
-}
-
-.folder:hover {
-    background: #3b2f63;
-    transform: translateX(5px);
-}
-
-/* RIGHT SIDE */
-.project-details {
-    width: 60%;
-    background: rgba(37, 39, 64, 0.9);
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(196,181,253,0.2);
-    text-align: left;
 }
 
 /* ===== SKILLS SECTION ===== */
